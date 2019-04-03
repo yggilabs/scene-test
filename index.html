@@ -40,12 +40,12 @@
 
             camera.attachControl(canvas, true);
 
-            camera.lowerRadiusLimit = 6;
-            camera.upperRadiusLimit = 20;
+            camera.lowerRadiusLimit = 20;
+            camera.upperRadiusLimit = 40;
 
             camera.useBouncingBehavior = true;
 
-            var light = new BABYLON.HemisphericLight("hemi", new BABYLON.Vector3(0, 1, 0), scene);
+            var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(20, 20, 100), scene);
             scene.clearColor = new BABYLON.Color3(1, 1, 1);
             scene.ambientColor = new BABYLON.Color3.White;
 
