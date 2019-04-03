@@ -37,7 +37,9 @@
 
             //as this .babylon example hasn't camera in it, we have to create one
             var camera = new BABYLON.ArcRotateCamera("Camera", 1, 1, 4, BABYLON.Vector3.Zero(), scene);
-            camera.attachControl(canvas, false);
+            camera.attachControl(canvas, true);
+
+            var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(20, 20, 100), scene);
 
             scene.clearColor = new BABYLON.Color3(1, 1, 1);
             scene.ambientColor = new BABYLON.Color3.White;
