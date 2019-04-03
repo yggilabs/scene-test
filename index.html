@@ -34,7 +34,7 @@
 
         // here the doc for Load function: //doc.babylonjs.com/api/classes/babylon.sceneloader#load
         BABYLON.SceneLoader.Load("", "island.babylon", engine, function (scene) {
-
+/*
             //as this .babylon example hasn't camera in it, we have to create one
             var camera = new BABYLON.ArcRotateCamera("Camera", 3 * Math.PI / 2, Math.PI / 8, 50, BABYLON.Vector3.Zero(), scene);
 
@@ -45,7 +45,7 @@
 
             camera.useBouncingBehavior = true;
 
-            var light = new BABYLON.HemisphericLight("hemi", new BABYLON.Vector3(0, 1, 0), scene);
+            var light = new BABYLON.HemisphericLight("hemi", new BABYLON.Vector3(0, 1, 0), scene);*/
             scene.clearColor = new BABYLON.Color3(1, 1, 1);
             scene.ambientColor = new BABYLON.Color3.White;
 
